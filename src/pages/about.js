@@ -2,11 +2,11 @@ import React from "react";
 
 import SEO from "../components/seo";
 
-const IndexPage = () => (
+const AboutPage = () => (
   <div className="content-wrapper">
-    <SEO title="Home" />
-    <h1>Home Page</h1>
+    <SEO title="About" />
+    <h1>About Page</h1>
   </div>
 );
 
-export default IndexPage;
+export default AboutPage;
