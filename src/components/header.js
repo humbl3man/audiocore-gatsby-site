@@ -55,11 +55,7 @@ const Header = ({ siteTitle }) => {
           <Link activeClassName="active" to="/about">
             About
           </Link>
-          <Link
-            activeClassName="active"
-            partiallyActive="active"
-            to="/location/"
-          >
+          <Link activeClassName="active" partiallyActive={true} to="/location/">
             Locations
           </Link>
         </nav>
