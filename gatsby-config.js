@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: `Audioc0re`,
@@ -28,8 +30,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // contentful CMS
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `3996wqgvaexq`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
   ],
 };
