@@ -30,13 +30,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    // contentful CMS
+    // sanity CMS
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: `gatsby-source-sanity`,
       options: {
-        spaceId: `3996wqgvaexq`,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        projectId: `9sbtqg12`,
+        dataset: "production",
+        accessToken: process.env.SANITY_ACCESS_TOKEN,
       },
     },
+    // postcss
+    `gatsby-plugin-postcss`,
   ],
 };

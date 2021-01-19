@@ -10,10 +10,8 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
-import "normalize.css";
-import "./layout.css";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, path }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,12 +24,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `AudioC0re`} />
-      <div className="page-wrapper">
+      <Header
+        isHomePage={path === "/"}
+        siteTitle={data.site.siteMetadata?.title || `AudioC0re`}
+      />
+      <div className="page">
         <main>{children}</main>
       </div>
-      <footer>
-        <div className="content-wrapper">
+      <footer className="mt-16 bg-gray-100 py-6 text-sm text-gray-500">
+        <div className="container">
           © {new Date().getFullYear()},{" "}
           {data.site.siteMetadata?.title || "AudioC0re"}
         </div>

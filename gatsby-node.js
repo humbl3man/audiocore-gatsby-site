@@ -1,7 +1,28 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
+const path = require("path");
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ graphql, actions }) => {
+  // template file
+  const locationTemplate = path.resolve("./src/templates/location.js");
+  const { data } = await graphql(`
+    query locationQuery {
+      allSanityLocations {
+        nodes {
+          name
+          url {
+            current
+          }
+        }
+      }
+    }
+  `);
+
+  data.allSanityLocations.nodes.forEach((location) => {
+    actions.createPage({
+      path: `location/${location.url.current}`,
+      component: locationTemplate,
+      context: {
+        locationName: location.name,
+      },
+    });
+  });
+};

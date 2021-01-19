@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-7xl mx-auto px-6;
+}
+.page-heading {
+  @apply font-bold text-3xl mb-6;
+}
+.page a {
+  @apply text-purple-600 underline hover:opacity-75;
+}
