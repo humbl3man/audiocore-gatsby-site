@@ -3,8 +3,7 @@ import { graphql, Link } from "gatsby";
 
 import SEO from "../components/seo";
 
-const AboutPage = ({ data }) => {
-  console.log(data);
+const LocationsPage = ({ data }) => {
   return (
     <div className="container">
       <SEO title="Locations" />
@@ -36,4 +35,4 @@ export const query = graphql`
   }
 `;
 
-export default AboutPage;
+export default LocationsPage;
