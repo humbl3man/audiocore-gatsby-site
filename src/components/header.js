@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import styled from "styled-components";
 import { FaHeadphones } from "react-icons/fa";
 
 const Header = ({ siteTitle, isHomePage }) => {

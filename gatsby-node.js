@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   data.allSanityLocations.nodes.forEach((location) => {
     actions.createPage({
-      path: `location/${location.url.current}`,
+      path: `locations/${location.url.current}`,
       component: locationTemplate,
       context: {
         locationName: location.name,

@@ -13,7 +13,7 @@ const AboutPage = ({ data }) => {
         {data.allSanityLocations.nodes.map(({ _id: id, name, url }) => {
           return (
             <li key={id}>
-              <Link to={`/location/${url.current}`}>{name}</Link>
+              <Link to={`/locations/${url.current}`}>{name}</Link>
             </li>
           );
         })}
