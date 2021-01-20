@@ -41,5 +41,7 @@ module.exports = {
     },
     // postcss
     `gatsby-plugin-postcss`,
+    // sitemap
+    `gatsby-plugin-sitemap`,
   ],
 };
