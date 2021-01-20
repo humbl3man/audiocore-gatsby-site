@@ -6,6 +6,7 @@ const AboutPage = () => (
   <div className="container">
     <SEO title="About" />
     <h1 className="page-heading">About Us</h1>
+    <h2>Heading 1</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
       inventore, eaque nobis ipsa ullam explicabo accusamus nihil minus. Nihil
@@ -16,20 +17,12 @@ const AboutPage = () => (
       praesentium numquam nesciunt sint, saepe culpa soluta reprehenderit totam
       corrupti natus, molestiae ducimus id aliquam qui aut provident fugiat!
       Perspiciatis quasi expedita nihil quis, a ad neque exercitationem
-      recusandae. Aperiam, consectetur iste! Consequuntur magnam debitis
-      assumenda illum enim, accusamus suscipit molestias inventore quas
-      quibusdam nam illo, voluptatum nesciunt ullam, dicta reiciendis corrupti
-      placeat ipsum. Quaerat dignissimos non, earum distinctio facilis nihil
-      natus maxime ex pariatur, voluptatem perferendis nisi. Deleniti odio culpa
-      adipisci nemo vel harum, dolores esse ipsa assumenda molestiae,
-      repellendus iure at incidunt eum totam expedita sapiente, recusandae
-      consequatur optio necessitatibus voluptas rerum! Et nesciunt quod ea
-      impedit perferendis neque praesentium mollitia earum exercitationem,
-      dignissimos, voluptates amet! Nesciunt nobis hic vitae voluptates eum
-      natus illo consequatur recusandae distinctio a possimus, veritatis et fuga
-      aliquid iure architecto quaerat porro praesentium quod inventore
-      accusantium asperiores ipsa? Eveniet officiis recusandae dolores optio a,
-      mollitia officia saepe.
+      recusandae.
+    </p>
+    <h2>Heading 2</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ullam at
+      non ipsam aperiam repellat nihil, vero impedit aut voluptatem!
     </p>
   </div>
 );
