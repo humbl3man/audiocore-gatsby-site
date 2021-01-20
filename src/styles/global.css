@@ -11,3 +11,19 @@
 .page a {
   @apply text-purple-600 underline hover:opacity-75;
 }
+.page p,
+.page ul {
+  @apply text-gray-700 mb-4 leading-6;
+}
+
+.page h2,
+.page h3 {
+  @apply font-bold mb-4;
+}
+
+.page h2 {
+  @apply text-2xl;
+}
+.page h3 {
+  @apply text-xl;
+}
