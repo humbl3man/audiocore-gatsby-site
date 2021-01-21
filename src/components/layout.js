@@ -28,15 +28,15 @@ const Layout = ({ children, path }) => {
         isHomePage={path === "/"}
         siteTitle={data.site.siteMetadata?.title || `AudioC0re`}
       />
-      <div className="page">
-        <main>{children}</main>
-      </div>
-      <footer className="mt-16 bg-gray-100 py-6 text-sm text-gray-500">
-        <div className="container">
-          © {new Date().getFullYear()},{" "}
-          {data.site.siteMetadata?.title || "AudioC0re"}
-        </div>
-      </footer>
+      <main>{children}</main>
+      {path !== "/" && (
+        <footer className="mt-16 bg-gray-100 py-6 text-sm text-gray-500">
+          <div className="container">
+            © {new Date().getFullYear()},{" "}
+            {data.site.siteMetadata?.title || "AudioC0re"}
+          </div>
+        </footer>
+      )}
     </>
   );
 };

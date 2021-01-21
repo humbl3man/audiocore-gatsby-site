@@ -1,6 +1,5 @@
 import { Link, graphql } from "gatsby";
 import React from "react";
-import { FaChevronRight } from "react-icons/fa";
 
 const LocationDetail = ({ data }) => {
   const { sanityLocations: location } = data;

@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 
 const LocationsPage = ({ data }) => {
   return (
-    <div className="container">
+    <div className="page container">
       <SEO title="Locations" />
       <h1 className="page-heading">Locations</h1>
       <ul>

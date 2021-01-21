@@ -1,13 +1,22 @@
+import { Link } from "gatsby";
 import React from "react";
+import { MdChevronRight } from "react-icons/md";
 
 import SEO from "../components/seo";
 
 const IndexPage = () => (
-  <div className="page">
+  <div>
     <SEO title="Home" />
-    <div className="bg-gray-50 py-40">
+    <div className="hero bg-purple-800 py-40 flex items-center pl-8 text-white h-screen">
       <div className="container">
-        <h1 className="my-0 text-5xl">Welcome To AudioC0re</h1>
+        <h1 className="mt-0 mb-3 text-8xl">AudioC0re</h1>
+        <p className="text-2xl opacity-90">Redefine your shopping experience</p>
+        <Link
+          className="py-2 px-4 rounded bg-white text-black shadow-sm mt-8 inline-flex items-center hover:bg-gray-100"
+          to="/locations"
+        >
+          Visit Our Locations <MdChevronRight className="text-2xl" />
+        </Link>
       </div>
     </div>
   </div>

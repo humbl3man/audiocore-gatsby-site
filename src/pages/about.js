@@ -3,7 +3,7 @@ import React from "react";
 import SEO from "../components/seo";
 
 const AboutPage = () => (
-  <div className="container">
+  <div className="page container">
     <SEO title="About" />
     <h1 className="page-heading">About Us</h1>
     <h2>Heading 1</h2>

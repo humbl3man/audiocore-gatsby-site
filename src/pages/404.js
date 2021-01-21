@@ -3,7 +3,7 @@ import React from "react";
 import SEO from "../components/seo";
 
 const NotFoundPage = () => (
-  <div className="container">
+  <div className="page container">
     <SEO title="404: Not found" />
     <h1 className="page-heading text-center">Page Not Found</h1>
     <p className="text-center">
