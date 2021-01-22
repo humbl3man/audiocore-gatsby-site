@@ -12,7 +12,7 @@ const IndexPage = () => (
         <h1 className="mt-0 mb-3 text-8xl">AudioC0re</h1>
         <p className="text-2xl opacity-90">Redefine your shopping experience</p>
         <Link
-          className="py-2 px-4 rounded bg-white text-black shadow-sm mt-8 inline-flex items-center hover:bg-gray-100"
+          className="py-2 px-4 opacity-90 rounded bg-white text-black shadow-sm mt-8 inline-flex items-center hover:opacity-80 transition-opacity"
           to="/locations"
         >
           Visit Our Locations <MdChevronRight className="text-2xl" />

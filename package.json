@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "audiocore-gatsby-challenge",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "AudioC0re",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Konstantin Minevich",
   "dependencies": {
     "autoprefixer": "^10.2.1",
     "babel-plugin-styled-components": "^1.12.0",

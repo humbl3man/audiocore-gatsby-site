@@ -37,6 +37,7 @@ module.exports = {
         projectId: `9sbtqg12`,
         dataset: "production",
         accessToken: process.env.SANITY_ACCESS_TOKEN,
+        watchMode: true,
       },
     },
     // postcss
