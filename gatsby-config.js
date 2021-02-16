@@ -1,4 +1,4 @@
-require("dotenv").config();
+require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
@@ -35,7 +35,7 @@ module.exports = {
       resolve: `gatsby-source-sanity`,
       options: {
         projectId: `9sbtqg12`,
-        dataset: "production",
+        dataset: 'production',
         accessToken: process.env.SANITY_ACCESS_TOKEN,
         watchMode: true,
       },
@@ -44,5 +44,13 @@ module.exports = {
     `gatsby-plugin-postcss`,
     // sitemap
     `gatsby-plugin-sitemap`,
+    // forms
+    {
+      resolve: `gatsby-source-formium`,
+      options: {
+        projectId: process.env.GATSBY_FORMIUM_PROJECTID,
+        accessToken: process.env.FORMIUM_TOKEN,
+      },
+    },
   ],
 };

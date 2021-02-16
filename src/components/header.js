@@ -1,7 +1,7 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React, { useState } from "react";
-import { FaHeadphones, FaBars, FaTimes } from "react-icons/fa";
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import { FaHeadphones, FaBars } from 'react-icons/fa';
 
 const Header = ({ siteTitle, isHomePage }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -17,8 +17,8 @@ const Header = ({ siteTitle, isHomePage }) => {
     <header
       className={` text-black ${
         isHomePage
-          ? "absolute top-0 left-0 w-full text-white"
-          : "mb-10 bg-purple-600 text-white"
+          ? 'absolute top-0 left-0 w-full text-white'
+          : 'mb-10 bg-purple-600 text-white'
       }`}
     >
       <div className="container py-6 flex items-center justify-between">
@@ -59,11 +59,26 @@ const Header = ({ siteTitle, isHomePage }) => {
           >
             Locations
           </Link>
+          <Link
+            className="opacity-90 hover:opacity-100"
+            activeStyle={{ opacity: 1 }}
+            partiallyActive={true}
+            to="/team/"
+          >
+            Team
+          </Link>
+          <Link
+            className="opacity-90 hover:opacity-100"
+            activeStyle={{ opacity: 1 }}
+            to="/contact-us/"
+          >
+            Contact
+          </Link>
         </nav>
         {/* Mobile Nav */}
         <nav
           className={`${
-            !mobileNavOpen ? "hidden " : ""
+            !mobileNavOpen ? 'hidden ' : ''
           }fixed inset-0 w-full h-full bg-purple-600 z-10 md:hidden`}
         >
           <button
@@ -72,7 +87,7 @@ const Header = ({ siteTitle, isHomePage }) => {
             aria-label="Close"
             className="mt-4 px-4 mb-6 w-full flex items-center justify-end text-2xl"
           >
-            <FaTimes />
+            &times;
           </button>
           <div className="px-4 grid grid-flow-row gap-5">
             <Link
@@ -102,6 +117,25 @@ const Header = ({ siteTitle, isHomePage }) => {
               className="text-xl"
             >
               Locations
+            </Link>
+            <Link
+              onClick={closeMobileNav}
+              className="opacity-90 hover:opacity-100"
+              activeStyle={{ opacity: 1 }}
+              partiallyActive={true}
+              to="/team/"
+              className="text-xl"
+            >
+              Team
+            </Link>
+            <Link
+              onClick={closeMobileNav}
+              className="opacity-90 hover:opacity-100"
+              activeStyle={{ opacity: 1 }}
+              to="/contact-us/"
+              className="text-xl"
+            >
+              Contact
             </Link>
           </div>
         </nav>
