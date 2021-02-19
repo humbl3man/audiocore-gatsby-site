@@ -52,5 +52,6 @@ module.exports = {
         accessToken: process.env.FORMIUM_TOKEN,
       },
     },
+    `gatsby-plugin-image`,
   ],
 };

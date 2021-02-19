@@ -92,48 +92,43 @@ const Header = ({ siteTitle, isHomePage }) => {
           <div className="px-4 grid grid-flow-row gap-5">
             <Link
               onClick={closeMobileNav}
-              className="opacity-90 hover:opacity-100"
+              className="text-xl opacity-90 hover:opacity-100"
               activeStyle={{ opacity: 1 }}
               to="/"
-              className="text-xl"
             >
               Home
             </Link>
             <Link
               onClick={closeMobileNav}
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 text-xl"
               activeStyle={{ opacity: 1 }}
               to="/about"
-              className="text-xl"
             >
               About
             </Link>
             <Link
               onClick={closeMobileNav}
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 text-xl"
               activeStyle={{ opacity: 1 }}
               partiallyActive={true}
               to="/locations/"
-              className="text-xl"
             >
               Locations
             </Link>
             <Link
               onClick={closeMobileNav}
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 text-xl"
               activeStyle={{ opacity: 1 }}
               partiallyActive={true}
               to="/team/"
-              className="text-xl"
             >
               Team
             </Link>
             <Link
               onClick={closeMobileNav}
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 text-xl"
               activeStyle={{ opacity: 1 }}
               to="/contact-us/"
-              className="text-xl"
             >
               Contact
             </Link>
