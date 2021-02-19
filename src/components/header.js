@@ -15,10 +15,8 @@ const Header = ({ siteTitle, isHomePage }) => {
 
   return (
     <header
-      className={` text-black ${
-        isHomePage
-          ? 'absolute top-0 left-0 w-full text-white'
-          : 'mb-10 bg-purple-600 text-white'
+      className={`global-header ${
+        isHomePage ? 'absolute top-0 left-0 w-full' : 'mb-10'
       }`}
     >
       <div className="container py-6 flex items-center justify-between">
@@ -35,41 +33,41 @@ const Header = ({ siteTitle, isHomePage }) => {
         >
           <FaBars />
         </button>
-        {/* Desktop Nav */}
+        {/* #### Desktop Nav #### */}
         <nav className="hidden md:grid md:gap-6 md:auto-cols-max md:grid-flow-col md:mt-0">
           <Link
-            className="opacity-90 hover:opacity-100"
-            activeStyle={{ opacity: 1 }}
+            className="opacity-90 hover:opacity-100 hover:text-purple-800"
+            activeClassName="text-purple-800 opacity-100"
             to="/"
           >
             Home
           </Link>
           <Link
-            className="opacity-90 hover:opacity-100"
-            activeStyle={{ opacity: 1 }}
+            className="opacity-90 hover:opacity-100 hover:text-purple-800"
+            activeClassName="text-purple-800 opacity-100"
             to="/about"
           >
             About
           </Link>
           <Link
-            className="opacity-90 hover:opacity-100"
-            activeStyle={{ opacity: 1 }}
+            className="opacity-90 hover:opacity-100 hover:text-purple-800"
+            activeClassName="text-purple-800 opacity-100"
             partiallyActive={true}
             to="/locations/"
           >
             Locations
           </Link>
           <Link
-            className="opacity-90 hover:opacity-100"
-            activeStyle={{ opacity: 1 }}
+            className="opacity-90 hover:opacity-100 hover:text-purple-800"
+            activeClassName="text-purple-800 opacity-100"
             partiallyActive={true}
             to="/team/"
           >
             Team
           </Link>
           <Link
-            className="opacity-90 hover:opacity-100"
-            activeStyle={{ opacity: 1 }}
+            className="opacity-90 hover:opacity-100 hover:text-purple-800"
+            activeClassName="text-purple-800 opacity-100"
             to="/contact-us/"
           >
             Contact
@@ -79,7 +77,7 @@ const Header = ({ siteTitle, isHomePage }) => {
         <nav
           className={`${
             !mobileNavOpen ? 'hidden ' : ''
-          }fixed inset-0 w-full h-full bg-purple-600 z-10 md:hidden`}
+          }fixed text-white inset-0 w-full h-full bg-purple-600 z-10 md:hidden`}
         >
           <button
             type="button"
@@ -92,7 +90,7 @@ const Header = ({ siteTitle, isHomePage }) => {
           <div className="px-4 grid grid-flow-row gap-5">
             <Link
               onClick={closeMobileNav}
-              className="text-xl opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 text-xl"
               activeStyle={{ opacity: 1 }}
               to="/"
             >
