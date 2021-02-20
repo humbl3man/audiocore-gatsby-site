@@ -73,7 +73,7 @@ const ContactUsPage = ({ data }) => {
 };
 
 export const query = graphql`
-  {
+  query {
     formiumForm(slug: { eq: "contact-us" }) {
       id
       name
