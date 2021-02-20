@@ -5,6 +5,7 @@ module.exports = {
     title: `Audioc0re`,
     description: `audioc0re`,
     author: `Konstantin Minevich`,
+    siteUrl: 'https://audiocore-25.netlify.app/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
