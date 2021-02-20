@@ -77,13 +77,11 @@ export const query = graphql`
     formiumForm(slug: { eq: "contact-us" }) {
       id
       name
-      createAt
       slug
       projectId
       schema
       createAt
       updateAt
-      version
     }
   }
 `;
