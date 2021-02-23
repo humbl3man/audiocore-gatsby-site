@@ -1,1 +1,1 @@
-export const heroImageWidth = 300;
+export const heroImageWidth = 500;
