@@ -30,7 +30,7 @@ const Layout = ({ children, path }) => {
       />
       <main className={path === '/' ? 'landing-page' : 'page'}>{children}</main>
       {path !== '/' && (
-        <footer className="mt-16 bg-gray-100 py-6 text-sm text-gray-500">
+        <footer className="mt-16 bg-gray-100 py-6 text-sm text-gray-700">
           <div className="container">
             © {new Date().getFullYear()},{' '}
             {data.site.siteMetadata?.title || 'AudioC0re'}
