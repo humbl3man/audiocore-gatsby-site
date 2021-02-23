@@ -10,13 +10,16 @@ const IndexPage = () => (
   <div>
     <SEO title="Home" />
     <div className="hero bg-white py-40 flex items-center pl-8 text-black h-screen">
-      <div className="container grid grid-cols-none md:grid-cols-2 gap-10">
+      <div
+        className="container grid gap-12"
+        style={{
+          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr)',
+        }}
+      >
         <div>
           <StaticImage
-            src="../images/hero-image.svg"
+            src="../images/headphones.jpg"
             alt="Hero Image"
-            width={heroImageWidth}
-            height={heroImageWidth}
             className="max-w-full"
           />
         </div>
