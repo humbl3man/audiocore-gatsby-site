@@ -29,6 +29,7 @@ const Header = ({ siteTitle, isHomePage }) => {
         <button
           type="button"
           className="block text-2xl md:hidden"
+          aria-label="Open Mobile Navigation"
           onClick={openMobileNav}
         >
           <FaBars />
