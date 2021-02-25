@@ -1,7 +1,8 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { FaHeadphones, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
+import logo from '../images/logo.svg';
 
 const Header = ({ siteTitle, isHomePage }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -14,15 +15,18 @@ const Header = ({ siteTitle, isHomePage }) => {
   }
 
   return (
-    <header
-      className={`global-header ${
-        isHomePage ? 'absolute top-0 left-0 w-full' : 'mb-10'
-      }`}
-    >
+    <header className="global-header mb-10">
       <div className="container py-6 flex items-center justify-between">
         <h1 className="my-0 font-bold uppercase tracking-wide">
           <Link to="/" className="inline-flex items-center">
-            <FaHeadphones className="mr-2 text-3xl" />
+            {/* <FaHeadphones className="mr-2 text-3xl" /> */}
+            <img
+              src={logo}
+              alt="logo"
+              width={35}
+              height={35}
+              className="inline-block mr-2"
+            />
             <span className="text-xl">{siteTitle}</span>
           </Link>
         </h1>

@@ -18,18 +18,21 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // pwa - web app manifest
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Audioc0re`,
+        short_name: `Audioc0re`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        display: `standalone`,
+        icon: `src/images/headphones-icon.png`, // This path is relative to the root of the site.
       },
     },
+    // pwa - service worker
+    `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     // sanity CMS
     {
